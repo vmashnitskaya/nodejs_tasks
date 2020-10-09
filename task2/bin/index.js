@@ -1,37 +1,18 @@
 #!/usr/bin/env node
 
 const { program } = require('commander');
-const path = require('path');
-const fs = require('fs');
-const {pipeline} = require('stream');
+const {inputProcessing} = require('./inputProcessing');
 
 program
-    .option('-s, --shift <shift>', 'shift in cipher')
-    .option('-i, --input <inputFile>', 'input file')
-    .option('-o, --output <outputFile>', 'output file')
-    .option('-a, --actions <actionToPerform>', 'action(encode/decode)')
+    .storeOptionsAsProperties(false)
+    .option('-s, --shift <shift>', 'shift in cipher', value => value)
+    .option('-i, --input <inputFile>', 'input file', value => value)
+    .option('-o, --output <outputFile>', 'output file', value => value)
+    .option('-a, --action <actionToPerform>', 'action(encode/decode)', value => value)
+    .action(() =>{
+        const {shift, input, output, action} = program.opts();
+        inputProcessing(shift, input, output, action)
+    })
     .parse(process.argv);
 
-
-
-process.on('exit', (code) => {
-    console.log(`Exited with code: ${code}`);
-});
-
-if(!program.shift || !program.actions){
-    console.log('Parameters --shift and --actions are required. Please try again.')
-    process.exit(400);
-}
-
-const inputFilePath = path.resolve(__dirname, '..', `files/${program.input}`);
-const outputFilePath = path.resolve(__dirname, '..', `files/${program.output}`);
-
-
-pipeline(
-    fs.createReadStream(inputFilePath),
-    fs.createWriteStream(outputFilePath),
-    (error) =>{
-        console.log(error);
-    }
-)
 
