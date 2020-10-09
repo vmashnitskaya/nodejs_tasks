@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed4d764-08d3-4480-9986-7639f02ae8f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/encription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/inputProcessing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/transformStream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/exitProcess.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/streams.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/inputProcessing.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/inputProcessing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/transformStream.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602170012740</updated>
       <workItem from="1602170013759" duration="12695000" />
-      <workItem from="1602226965933" duration="3457000" />
+      <workItem from="1602226965933" duration="4697000" />
     </task>
     <servers />
   </component>
@@ -68,6 +67,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="219" y="2" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1602188689553" />
+    <state x="433" y="101" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602231353833">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="433" y="101" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1602231353833" />
     <state width="1481" height="239" key="GridCell.Tab.0.bottom" timestamp="1602226951166">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
